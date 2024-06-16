@@ -1,14 +1,14 @@
-# PixelOS
+# CUAOSP
 
  Getting Started
 ---------------
-To get started with the PixelOS sources, you'll need to get
+To get started with the CUAOSP sources, you'll need to get
 familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
 
  To initialize your local repository, use command:
 
 ```bash
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
+repo init -u https://github.com/isg32/android_manifest_custom.git --git-lfs
 ```
 
 Then sync up:
@@ -28,7 +28,7 @@ Building the System
 Lunch your device after cloning all device sources if needed.
 
 ```bash
-lunch aosp_devicecodename-buildtype
+lunch aosp_hanoip-user
 ```
 
 Start compilation

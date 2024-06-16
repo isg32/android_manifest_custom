@@ -13,11 +13,24 @@
            fetch="https://gitlab.com/PixelOS-Devices"
            revision="refs/heads/fourteen" />
 
+  <remote  name="PixelBuildsROM"
+           fetch="https://github.com/PixelBuildsROM"
+           revision="refs/heads/fourteen" />
+          
+  <remote  name="hentaios"
+           fetch="https://github.com/hentaios"
+           revision="refs/heads/fourteen" />
+
+  <remote  name="hentaios-gitlab"
+           fetch="https://gitlab.hentaios.com/hentaios/"
+           revision="refs/heads/fourteen" />
+           
+
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="PixelOS" />
 
   <!-- Bootable -->
-  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="PixelOS" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="hentaios" />
 
   <!-- Build -->
   <project path="build/make" name="build" groups="pdk" remote="PixelOS">
@@ -37,9 +50,9 @@
   <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="PixelOS" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="PixelOS" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="PixelOS" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="hentaios" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hentaios" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="hentaios" />
 
   <!-- Hardware -->
   <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="PixelOS" />
@@ -67,7 +80,6 @@
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="PixelOS" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="PixelOS" />
-  <project path="vendor/microsoft" name="vendor_microsoft" remote="PixelOS" />
-  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="PixelOS-Devices-Gitlab" />
+  <project path="vendor/gms" name="platform_vendor_gms" clone-depth="1" remote="hentaios-Gitlab" />
 
 </manifest>
