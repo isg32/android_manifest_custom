@@ -2,13 +2,13 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
+           fetch=".."
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-14.0.0_r37"
+  <default revision="refs/tags/android-u-qpr2-beta-2-gpl"
            remote="aosp"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r37"/>
+  <superproject name="platform/superproject" remote="aosp" revision="android-15-dp-2-gpl"/>
   <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/make" name="platform/build" groups="pdk,sysui-studio" >
